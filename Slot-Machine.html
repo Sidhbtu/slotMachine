@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Slot Machine</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  
+  $("#btnSpin").click(function(){
+    $("#slot1").stop();
+  });
+});
+</script>
+
+	<script async defer src="Slot-Machine.js" type="text/javascript" ></script>
+	<link rel="stylesheet" type="text/css" href="Slot-Machine.css">
+</head>
+<body>
+
+
+<div class='machine'>
+<div class='slot' id='slot1'> 
+	<div class='value' id='value1'> 😭 </div> 
+</div>
+<div class='slot' id='slot2'>
+	<div class='value' id='value2'> 😭 </div> 
+</div>
+<div class='slot' id='slot3'>
+	<div class='value' id='value3'> 😭 </div> 
+</div>
+</div>
+
+
+<input id='inpSpeed' type='number' min='1' max='10'>
+
+<button id='btnSpin' onclick="SpinAndStop()">Spin and Stop</button>
+
+
+</body>
+</html>
